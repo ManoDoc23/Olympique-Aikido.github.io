@@ -24,8 +24,6 @@ export function Navbar() {
               src="../../LogoImg.jpg" 
               alt="Logo Wagokan Aïkido NC" 
               className="w-7 h-7 object-contain" 
-/>
-  
             />
           </div>
           <span style={{ fontFamily: "Oswald, sans-serif", color: "var(--foreground)", fontWeight: 600, letterSpacing: "0.04em", fontSize: "1.1rem" }}>
