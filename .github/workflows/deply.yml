@@ -4,7 +4,7 @@ on:
   push:
     branches: 'main'
 
-permission:
+permissions: # 👈 Le "s" a été ajouté ici !
   contents: read
   pages: write
   id-token: write
