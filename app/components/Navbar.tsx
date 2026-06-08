@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+// Assurez-vous que le fichier de votre logo à la racine s'appelle exactement LogoImg (avec son extension, ex: LogoImg.png)
 import logoClub from './LogoImg';
 
 export function Navbar() {
@@ -17,25 +18,21 @@ export function Navbar() {
     <nav className="w-full bg-slate-900 text-white"> 
       <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
         
-        {/* BLOC DU LOGO ET DU TITRE */}
+        {/* BLOC DU LOGO ET DU TITRE NETTOYÉ */}
         <a href="#" className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-full flex items-center justify-center bg-blue-500">
+          <div className="w-9 h-9 rounded-full flex items-center justify-center bg-blue-500 overflow-hidden">
             <img 
-              src="./votre-nom-de-photo.png" 
-              alt="Logo" 
-              className="w-6 h-6 object-contain" 
+              src={logoClub} 
+              alt="Logo Wagokan Aïkido NC" 
+              className="w-7 h-7 object-contain" 
             />
           </div>
-          <span className="text-white font-semibold text-lg">
-            OLYMPIQUE AÏKIDO NC
+          <span style={{ fontFamily: "Oswald, sans-serif", color: "var(--foreground)", fontWeight: 600, letterSpacing: "0.04em", fontSize: "1.1rem" }}>
+            WAGOKAN AÏKIDO NC
           </span>
         </a>
-  {/* Le texte du club modifié ici */}
-  <span style={{ fontFamily: "Oswald, sans-serif", color: "var(--foreground)", fontWeight: 600, letterSpacing: "0.04em", fontSize: "1.1rem" }}>
-    WAGOKAN AÏKIDO NC
-  </span>
-</a>
 
+        {/* LIENS DU MENU DE DROITE (GRAND ÉCRAN) */}
         <div className="hidden md:flex items-center gap-8">
           {links.map((l) => (
             <a
@@ -68,6 +65,7 @@ export function Navbar() {
           </a>
         </div>
 
+        {/* BOUTON MENU BURGER (MOBILE) */}
         <button
           className="md:hidden"
           onClick={() => setOpen((v) => !v)}
@@ -77,6 +75,7 @@ export function Navbar() {
         </button>
       </div>
 
+      {/* MENU DÉROULANT (MOBILE) */}
       {open && (
         <div
           className="md:hidden px-6 pb-6 flex flex-col gap-4"
