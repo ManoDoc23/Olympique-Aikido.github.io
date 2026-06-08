@@ -56,10 +56,10 @@ const faqs = [
 ];
 
 export default function App() {
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
   return (
-    <div style={{ background: "var(--background)", color: "var(--foreground)", minHeight: "100vh", overflowX: "hidden" }}>
+    <div>
+       <h1>Bienvenue sur Aïkido Jeunes !</h1>
+       style={{ background: "var(--background)", color: "var(--foreground)", minHeight: "100vh", overflowX: "hidden" }}>
       {/* MARKER-MAKE-KIT-INVOKED */}
       <Navbar />
 
