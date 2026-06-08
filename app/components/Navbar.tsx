@@ -21,9 +21,11 @@ export function Navbar() {
         <a href="#" className="flex items-center gap-3">
           <div className="w-9 h-9 rounded-full flex items-center justify-center bg-blue-500 overflow-hidden">
             <img 
-              '../../LogoImg.jpg'
+              src="../../LogoImg.jpg" 
               alt="Logo Wagokan Aïkido NC" 
               className="w-7 h-7 object-contain" 
+/>
+  
             />
           </div>
           <span style={{ fontFamily: "Oswald, sans-serif", color: "var(--foreground)", fontWeight: 600, letterSpacing: "0.04em", fontSize: "1.1rem" }}>
