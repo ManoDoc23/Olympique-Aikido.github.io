@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logoClub from '../../LogoImg';
+import logoClub from '../../LogoImg.jpg';
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
@@ -21,7 +21,7 @@ export function Navbar() {
         <a href="#" className="flex items-center gap-3">
           <div className="w-9 h-9 rounded-full flex items-center justify-center bg-blue-500 overflow-hidden">
             <img 
-              '../../LogoImg'
+              '../../LogoImg.jpg'
               alt="Logo Wagokan Aïkido NC" 
               className="w-7 h-7 object-contain" 
             />
