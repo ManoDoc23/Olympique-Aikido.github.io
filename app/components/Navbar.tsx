@@ -15,19 +15,23 @@ export function Navbar() {
     <nav className="w-full bg-slate-900 text-white"> 
       <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
         
-        {/* BLOC DU LOGO ET DU TITRE NETTOYÉ */}
+{/* BLOC DU LOGO ET DU TITRE NETTOYÉ ET CORRIGÉ */}
         <a href="#" className="flex items-center gap-3">
+{/* Le cercle bleu */}
           <div className="w-9 h-9 rounded-full flex items-center justify-center bg-blue-500 overflow-hidden">
+{/* Balise image réparée */}
             <img 
-              src="../../LogoImg.jpg" 
-              alt="Logo Wagokan Aïkido NC" 
-              className="w-7 h-7 object-contain" 
-            />
-          </div>
-          <span style={{ fontFamily: "Oswald, sans-serif", color: "var(--foreground)", fontWeight: 600, letterSpacing: "0.04em", fontSize: "1.1rem" }}>
-            WAGOKAN AÏKIDO NC
-          </span>
-        </a>
+            src="/LogoImg.jpg" 
+            alt="Logo Wagokan Aïkido NC" 
+            className="w-7 h-7 object-contain" 
+   />
+  </div>
+  
+  {/* Le nom du club */}
+  <span style={{ fontFamily: "Oswald, sans-serif", color: "var(--foreground)", fontWeight: 600, letterSpacing: "0.04em", fontSize: "1.1rem" }}>
+    WAGOKAN AÏKIDO NC
+  </span>
+</a>
 
         {/* LIENS DU MENU DE DROITE (GRAND ÉCRAN) */}
         <div className="hidden md:flex items-center gap-8">
