@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logoClub from './LogoImg';
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
@@ -24,10 +25,11 @@ export function Navbar() {
     className="w-9 h-9 rounded-full flex items-center justify-center"
     style={{ background: "var(--primary)" }}
   >
-    <span style={{ fontFamily: "Oswald, sans-serif", color: "#fff", fontWeight: 700, fontSize: "0.9rem" }}>
-      合
-    </span>
-  </div>
+    <img 
+  src={logoClub} 
+  alt="Logo Olympique Aïkido NC" 
+  className="w-6 h-6 object-contain" 
+/>
 
   {/* Le texte du club modifié ici */}
   <span style={{ fontFamily: "Oswald, sans-serif", color: "var(--foreground)", fontWeight: 600, letterSpacing: "0.04em", fontSize: "1.1rem" }}>
