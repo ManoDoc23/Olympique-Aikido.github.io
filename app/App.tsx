@@ -508,7 +508,7 @@ export default function App() {
             <span style={{ ...heading, color: "var(--foreground)", fontSize: "0.95rem" }}>AÏKIDO JEUNES</span>
           </div>
           <p style={{ ...body, color: "var(--muted-foreground)", fontSize: "0.82rem", textAlign: "center" }}>
-            © 2025 Club Aïkido Jeunes · Affilié à la FFAAA · Tous droits réservés
+            © 2026 Club Aïkido Jeunes · Affilié à la <FFAB></FFAB> · Tous droits réservés
           </p>
           <div className="flex gap-6">
             {["Mentions légales", "Politique de confidentialité"].map((l) => (
