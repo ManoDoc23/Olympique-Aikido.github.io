@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import {logoClub} from '../../LogoImg.jpg';
+import logoClub from '../../LogoImg.jpg';
 export function Navbar() {
   const [open, setOpen] = useState(false);
-
   const links = [
     { label: "Le Club", href: "#club" },
     { label: "Programmes", href: "#programmes" },
