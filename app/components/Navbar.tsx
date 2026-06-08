@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-// Assurez-vous que le fichier de votre logo à la racine s'appelle exactement LogoImg (avec son extension, ex: LogoImg.png)
-import logoClub from './LogoImg';
+import logoClub from '../../LogoImg';
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
