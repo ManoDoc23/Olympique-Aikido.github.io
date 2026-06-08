@@ -14,23 +14,22 @@ export function Navbar() {
   ];
 
   return (
-    <nav
-      className="fixed top-0 left-0 right-0 z-50"
-      style={{ background: "rgba(10,15,30,0.92)", backdropFilter: "blur(12px)", borderBottom: "1px solid rgba(255,255,255,0.07)" }}
-    >
-      <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
-       <a href="#" className="flex items-center gap-3">
-  {/* Le rond bleu avec le symbole 合 */}
-  <div
-    className="w-9 h-9 rounded-full flex items-center justify-center"
-    style={{ background: "var(--primary)" }}
-  >
-    <img 
-  src={logoClub} 
-  alt="Logo Olympique Aïkido NC" 
-  className="w-6 h-6 object-contain" 
-/>
-
+    <nav className="w-full bg-slate-900 text-white"> 
+      <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+        
+        {/* BLOC DU LOGO ET DU TITRE */}
+        <a href="#" className="flex items-center gap-3">
+          <div className="w-9 h-9 rounded-full flex items-center justify-center bg-blue-500">
+            <img 
+              src="./votre-nom-de-photo.png" 
+              alt="Logo" 
+              className="w-6 h-6 object-contain" 
+            />
+          </div>
+          <span className="text-white font-semibold text-lg">
+            OLYMPIQUE AÏKIDO NC
+          </span>
+        </a>
   {/* Le texte du club modifié ici */}
   <span style={{ fontFamily: "Oswald, sans-serif", color: "var(--foreground)", fontWeight: 600, letterSpacing: "0.04em", fontSize: "1.1rem" }}>
     WAGOKAN AÏKIDO NC
