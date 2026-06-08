@@ -21,7 +21,7 @@ export function Navbar() {
           <div className="w-9 h-9 rounded-full flex items-center justify-center bg-blue-500 overflow-hidden">
 {/* Balise image réparée */}
             <img 
-            src="/LogoImg.jpg" 
+            src={logoClub}
             alt="Logo Wagokan Aïkido NC" 
             className="w-7 h-7 object-contain" 
    />
