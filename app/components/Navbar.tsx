@@ -18,17 +18,22 @@ export function Navbar() {
       style={{ background: "rgba(10,15,30,0.92)", backdropFilter: "blur(12px)", borderBottom: "1px solid rgba(255,255,255,0.07)" }}
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
-        <a href="#" className="flex items-center gap-3">
-          <div
-            className="w-9 h-9 rounded-full flex items-center justify-center"
-            style={{ background: "var(--primary)" }}
-          >
-            <span style={{ fontFamily: "Oswald, sans-serif", color: "#fff", fontWeight: 700, fontSize: "0.9rem" }}>合</span>
-          </div>
-          <span style={{ fontFamily: "Oswald, sans-serif", color: "var(--foreground)", fontWeight: 600, letterSpacing: "0.04em", fontSize: "1.1rem" }}>
-            AÏKIDO JEUNES
-          </span>
-        </a>
+       <a href="#" className="flex items-center gap-3">
+  {/* Le rond bleu avec le symbole 合 */}
+  <div
+    className="w-9 h-9 rounded-full flex items-center justify-center"
+    style={{ background: "var(--primary)" }}
+  >
+    <span style={{ fontFamily: "Oswald, sans-serif", color: "#fff", fontWeight: 700, fontSize: "0.9rem" }}>
+      合
+    </span>
+  </div>
+
+  {/* Le texte du club modifié ici */}
+  <span style={{ fontFamily: "Oswald, sans-serif", color: "var(--foreground)", fontWeight: 600, letterSpacing: "0.04em", fontSize: "1.1rem" }}>
+    WAGOKAN AÏKIDO NC
+  </span>
+</a>
 
         <div className="hidden md:flex items-center gap-8">
           {links.map((l) => (

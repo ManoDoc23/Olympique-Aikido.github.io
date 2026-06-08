@@ -75,7 +75,7 @@ export default function App() {
           style={{ background: "linear-gradient(to top, rgba(10,15,30,1) 0%, rgba(10,15,30,0.3) 60%, transparent 100%)" }}
         />
         <div className="relative max-w-6xl mx-auto px-6 pb-20 w-full">
-          <SectionLabel>Club d'aïkido jeunes</SectionLabel>
+          <SectionLabel>Olympique de Nouméa - Section Arts Martiaux </SectionLabel>
           <h1
             style={{
               ...heading,
@@ -508,7 +508,7 @@ export default function App() {
             <span style={{ ...heading, color: "var(--foreground)", fontSize: "0.95rem" }}>AÏKIDO JEUNES</span>
           </div>
           <p style={{ ...body, color: "var(--muted-foreground)", fontSize: "0.82rem", textAlign: "center" }}>
-            © 2026 Club Aïkido Jeunes · Affilié à la <FFAB></FFAB> · Tous droits réservés
+            © 2026 Club Aïkido Jeunes · Affilié à la FFAB · Tous droits réservés
           </p>
           <div className="flex gap-6">
             {["Mentions légales", "Politique de confidentialité"].map((l) => (
