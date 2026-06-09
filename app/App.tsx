@@ -457,7 +457,7 @@ export default function App() {
               { label: "Prénom de l'enfant", placeholder: "Lucas", type: "text" },
               { label: "Âge de l'enfant", placeholder: "8 ans", type: "text" },
               { label: "Email", placeholder: "parent@exemple.fr", type: "email" },
-              { label: "Téléphone", placeholder: "06 xx xx xx xx", type: "tel" },
+              { label: "Téléphone", placeholder: " xx xx xx", type: "tel" },
             ].map((f) => (
               <div key={f.label}>
                 <label style={{ ...body, color: "var(--muted-foreground)", fontSize: "0.8rem", display: "block", marginBottom: 6 }}>{f.label}</label>
