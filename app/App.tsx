@@ -6,8 +6,7 @@ import { MapPin, Clock, Phone, Mail, ChevronDown, Star, Shield, Heart, Users } f
 import heroImg from "./../heroImg.jpg";
 // @ts-ignore
 import practiceImg from "./../practiceImg.jpg";
-// @ts-ignore
-import kidsImg from "./../kidsImg.jpg";
+const kidsImg = "";
 // @ts-ignore
 import dojoImg from "./../dojoImg.jpg";
 // @ts-ignore
