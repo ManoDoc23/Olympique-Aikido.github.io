@@ -7,7 +7,7 @@ import heroImg from "./../heroImg.jpg";
 // @ts-ignore
 import practiceImg from "./../practiceImg.jpg";
 // @ts-ignore
-import kidsImg from "./../kidsImg.jpg";
+import kidsImg from "./../enfants.jpg";
 // @ts-ignore
 import dojoImg from "./../dojoImg.jpg";
 // @ts-ignore
@@ -231,7 +231,7 @@ export default function App() {
           <div className="grid md:grid-cols-2 gap-10">
             {[
               {
-                img: kidsImg,
+                img: practiceImg,
                 age: "6 – 10 ans",
                 title: "Éveil aïkido",
                 desc: "Une approche ludique et progressive. Les enfants apprennent les chutes (ukemi), les déplacements et les premières techniques de base à travers des jeux et exercices adaptés.",
