@@ -50,7 +50,7 @@ const scheduleData = [
   { day: "Mercredi (à venir)", time: "16h30 – 17h30", group: "Enfants (6–10 ans)", sensei: "Mano" },
   { day: "Mercredi (à venir)", time: "17h45 – 19h", group: "Ados (11–17 ans)", sensei: "Sergio" },
   { day: "Samedi", time: "9h15 – 10h15", group: "Enfants (6–10 ans)", sensei: "Mano" },
-  { day: "Samedi", time: "10h30 – 12h", group: "Aïkitaïso" , group: "Ados (11–17 ans)", sensei: "Sergio" }
+  { day: "Samedi", time: "10h30 – 12h", group: "Ados (11–17 ans)", sensei: "Sergio" }
 ];
 
 const faqs = [
