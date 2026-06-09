@@ -2,11 +2,16 @@ import { useState } from "react";
 import { Navbar } from "./components/Navbar";
 import { MapPin, Clock, Phone, Mail, ChevronDown, Star, Shield, Heart, Users } from "lucide-react";
 
+// @ts-ignore
 import heroImg from "./../heroImg.jpg";
+// @ts-ignore
 import practiceImg from "./../practiceImg.jpg";
+// @ts-ignore
 import kidsImg from "./../kidsImg.jpg";
+// @ts-ignore
 import dojoImg from "./../dojoImg.jpg";
-import groupImg from "./../groupImg.jpg"
+// @ts-ignore
+import groupImg from "./../groupImg.jpg";
 
 const heading: React.CSSProperties = {
   fontFamily: "Oswald, sans-serif",
@@ -474,7 +479,6 @@ export default function App() {
                 />
               </div>
             ))}
-            {/* BOUTON DE MESSAGERIE LIÉ À VOTRE EMAIL NETTOYÉ */}
             <a 
               href="mailto:wagokan.aikido@gmail.com?subject=Demande de cours d'essai - Wagokan Aïkido NC"
               className="w-full block text-center bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-4 rounded-lg transition duration-200"
