@@ -2,11 +2,11 @@ import { useState } from "react";
 import { Navbar } from "./components/Navbar";
 import { MapPin, Clock, Phone, Mail, ChevronDown, Star, Shield, Heart, Users } from "lucide-react";
 
-const heroImg = "https://images.unsplash.com/photo-1598300606161-4019d0dfec28?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1600&q=80";
-const practiceImg = "https://images.unsplash.com/photo-1541836567455-2d41eb6dd9b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=900&q=80";
-const kidsImg = "https://images.unsplash.com/photo-1530560643359-6d2fead989b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=900&q=80";
-const dojoImg = "https://images.unsplash.com/photo-1530417838433-4b24dd3f72d4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=900&q=80";
-const groupImg = "https://images.unsplash.com/photo-1521178754292-acb01ac7c29d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=900&q=80";
+import heroImg from "./../heroImg.jpg";
+import practiceImg from "./../practiceImg.jpg";
+import kidsImg from "./../kidsImg.jpg";
+import dojoImg from "./../dojoImg.jpg";
+import groupImg from "./../groupImg.jpg"
 
 const heading: React.CSSProperties = {
   fontFamily: "Oswald, sans-serif",
@@ -41,17 +41,17 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 }
 
 const scheduleData = [
-  { day: "Lundi", time: "17h30 – 18h30", group: "Enfants (6–10 ans)", sensei: "Sensei Martin" },
-  { day: "Mercredi", time: "17h00 – 18h00", group: "Enfants (6–10 ans)", sensei: "Sensei Martin" },
-  { day: "Mercredi", time: "18h15 – 19h30", group: "Ados (11–17 ans)", sensei: "Sensei Dupont" },
-  { day: "Vendredi", time: "17h30 – 18h30", group: "Enfants (6–10 ans)", sensei: "Sensei Martin" },
-  { day: "Samedi", time: "10h00 – 11h30", group: "Tous niveaux jeunes", sensei: "Sensei Martin & Dupont" },
+  { day: "Lundi (à venir)", time: "18h – 19h30", group: "Aïkitaïso", sensei: "Sergio" },
+  { day: "Mercredi (à venir)", time: "16h30 – 17h30", group: "Enfants (6–10 ans)", sensei: "Mano" },
+  { day: "Mercredi (à venir)", time: "17h45 – 19h", group: "Ados (11–17 ans)", sensei: "Sergio" },
+  { day: "Samedi", time: "9h15 – 10h30", group: "Enfants (6–10 ans)", sensei: "Mano" },
+  { day: "Samedi", time: "10h45 – 12h", group: "Ados (11–17 ans)", sensei: "Sergio" }
 ];
 
 const faqs = [
   { q: "Quel équipement faut-il pour commencer ?", a: "Au départ, une tenue de sport suffit. Après quelques séances, nous vous conseillons l'achat d'un keikogi (kimono d'aïkido). Le club peut vous orienter vers les fournisseurs." },
-  { q: "À partir de quel âge peut-on pratiquer l'aïkido ?", a: "Nous accueillons les enfants dès 6 ans. L'aïkido étant un art martial non compétitif, il est accessible à tous les profils, même sans expérience sportive préalable." },
-  { q: "Y a-t-il des compétitions ?", a: "Non. L'aïkido ne dispose pas de compétitions officielles. La progression se fait via des examens de passage de grade, dans un esprit de coopération et non de rivalité." },
+  { q: "À partir de quel âge peut-on pratiquer l'aïkido ?", a: "Nous accueillons les enfants dès 6 ans (4 ans sous certaine conditions). L'aïkido étant un art martial non compétitif, il est accessible à tous les profils, même sans expérience sportive préalable." },
+  { q: "Y a-t-il des compétitions ?", a: "Non. L'aïkido ne participe à aucune compétition. La progression se fait via des examens de passage de grade, dans un esprit de coopération et non de rivalité." },
   { q: "Comment s'inscrire ?", a: "Cliquez sur le bouton de contact ci-dessous pour nous envoyer directement un e-mail ou venez directement au dojo. La première séance d'essai est offerte et sans engagement." },
 ];
 
@@ -150,9 +150,9 @@ export default function App() {
         <div className="max-w-6xl mx-auto px-6 py-6 grid grid-cols-2 md:grid-cols-4 gap-6">
           {[
             { val: "120+", label: "Jeunes pratiquants" },
-            { val: "15 ans", label: "D'expérience" },
-            { val: "4 sensei", label: "Enseignants diplômés" },
+            { val: "25 ans", label: "D'expérience" },
             { val: "3e dan", label: "Niveau maximum encadrant" },
+            { val: "0% compétition" , label: "1O0% de réussite par la coopération" },
           ].map((s) => (
             <div key={s.label} className="text-center">
               <div style={{ ...heading, fontSize: "1.8rem", color: "#fff", lineHeight: 1.1 }}>{s.val}</div>
@@ -168,7 +168,7 @@ export default function App() {
           <div>
             <SectionLabel>Notre histoire</SectionLabel>
             <h2 style={{ ...heading, fontSize: "clamp(2rem, 4vw, 2.8rem)", color: "var(--foreground)", marginBottom: "1.5rem", lineHeight: 1.15 }}>
-              Un dojo ouvert à toutes les familles depuis 2009
+              Un dojo ouvert à toutes les familles depuis 2017
             </h2>
             <p style={{ ...body, color: "var(--muted-foreground)", lineHeight: 1.8, marginBottom: "1rem" }}>
               Le club de l'<strong>Olympique Aïkido NC (Wagokan)</strong> accueille les enfants à partir de 6 ans dans un espace sécurisé et chaleureux. Notre priorité : que chaque enfant progresse à son rythme, dans le respect et la joie du mouvement.
@@ -320,9 +320,9 @@ export default function App() {
               />
               <div className="p-6 flex flex-col gap-4">
                 {[
-                  { icon: <MapPin size={18} />, label: "Dojo Municipal", sub: "Nouméa, Nouvelle-Calédonie" },
-                  { icon: <Clock size={18} />, label: "Lundi, Mercredi, Vendredi, Samedi", sub: "Voir planning ci-contre" },
-                  { icon: <Phone size={18} />, label: "+687 xx xx xx", sub: "Disponible pour toute question" },
+                  { icon: <MapPin size={18} />, label: "13 rue Jules Ferry (imm. Cheval)", sub: "Nouméa, Nouvelle-Calédonie" },
+                  { icon: <Clock size={18} />, label: "Lundi, Mercredi et Samedi", sub: "Voir planning ci-contre" },
+                  { icon: <Phone size={18} />, label: "+687 99 20 98", sub: "Disponible pour toute question" },
                   { icon: <Mail size={18} />, label: "wagokan.aikido@gmail.com", sub: "Réponse rapide" },
                 ].map((info) => (
                   <div key={info.label} className="flex items-start gap-3">
