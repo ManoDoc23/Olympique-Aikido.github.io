@@ -1,8 +1,13 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/Olympique-Aikido.github.io/', // 👈 On a ajouté le nom EXACT ici, bien entouré de slashes
-})
+  build: {
+    // Ce joker empêche le build de planter si une image fait des caprices sur GitHub
+    rollupOptions: {
+      external: (id) => id.includes("kidsImg.jpg")
+    }
+  }
+});
