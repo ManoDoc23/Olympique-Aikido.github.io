@@ -152,7 +152,7 @@ export default function App() {
             { val: "120+", label: "Jeunes pratiquants" },
             { val: "25 ans", label: "D'expérience" },
             { val: "3e dan", label: "Niveau maximum encadrant" },
-            { val: "0% compétition" , label: "1O0% de réussite par la coopération" },
+            { val: "0% compétition" , label: "100% de réussite par la coopération" },
           ].map((s) => (
             <div key={s.label} className="text-center">
               <div style={{ ...heading, fontSize: "1.8rem", color: "#fff", lineHeight: 1.1 }}>{s.val}</div>
