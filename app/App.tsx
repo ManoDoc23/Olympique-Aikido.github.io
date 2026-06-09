@@ -52,7 +52,7 @@ const faqs = [
   { q: "Quel équipement faut-il pour commencer ?", a: "Au départ, une tenue de sport suffit. Après quelques séances, nous vous conseillons l'achat d'un keikogi (kimono d'aïkido). Le club peut vous orienter vers les fournisseurs." },
   { q: "À partir de quel âge peut-on pratiquer l'aïkido ?", a: "Nous accueillons les enfants dès 6 ans. L'aïkido étant un art martial non compétitif, il est accessible à tous les profils, même sans expérience sportive préalable." },
   { q: "Y a-t-il des compétitions ?", a: "Non. L'aïkido ne dispose pas de compétitions officielles. La progression se fait via des examens de passage de grade, dans un esprit de coopération et non de rivalité." },
-  { q: "Comment s'inscrire ?", a: "Remplissez le formulaire de contact ci-dessous ou venez directement au dojo. La première séance d'essai est offerte et sans engagement." },
+  { q: "Comment s'inscrire ?", a: "Cliquez sur le bouton de contact ci-dessous pour nous envoyer directement un e-mail ou venez directement au dojo. La première séance d'essai est offerte et sans engagement." },
 ];
 
 export default function App() {
@@ -75,7 +75,7 @@ export default function App() {
           style={{ background: "linear-gradient(to top, rgba(10,15,30,1) 0%, rgba(10,15,30,0.3) 60%, transparent 100%)" }}
         />
         <div className="relative max-w-6xl mx-auto px-6 pb-20 w-full">
-          <SectionLabel>Olympique de Nouméa - Section Arts Martiaux </SectionLabel>
+          <SectionLabel> Section Arts Martiaux - WAGOKAN NC AIKIDO </SectionLabel>
           <h1
             style={{
               ...heading,
@@ -171,7 +171,7 @@ export default function App() {
               Un dojo ouvert à toutes les familles depuis 2009
             </h2>
             <p style={{ ...body, color: "var(--muted-foreground)", lineHeight: 1.8, marginBottom: "1rem" }}>
-              Fondé par Sensei Éric Martin, 3e dan, le Club Aïkido Jeunes accueille les enfants à partir de 6 ans dans un espace sécurisé et chaleureux. Notre priorité : que chaque enfant progresse à son rythme, dans le respect et la joie du mouvement.
+              Le club de l'<strong>Olympique Aïkido NC (Wagokan)</strong> accueille les enfants à partir de 6 ans dans un espace sécurisé et chaleureux. Notre priorité : que chaque enfant progresse à son rythme, dans le respect et la joie du mouvement.
             </p>
             <p style={{ ...body, color: "var(--muted-foreground)", lineHeight: 1.8 }}>
               L'aïkido n'est pas un sport de combat mais un art martial fondé sur la redirection de l'énergie adverse. Il développe la coordination, la confiance en soi, la gestion des émotions — des qualités précieuses bien au-delà du tatami.
@@ -320,10 +320,10 @@ export default function App() {
               />
               <div className="p-6 flex flex-col gap-4">
                 {[
-                  { icon: <MapPin size={18} />, label: "Dojo Municipal de la Rivière", sub: "12 rue des Arts Martiaux, 75018 Paris" },
+                  { icon: <MapPin size={18} />, label: "Dojo Municipal", sub: "Nouméa, Nouvelle-Calédonie" },
                   { icon: <Clock size={18} />, label: "Lundi, Mercredi, Vendredi, Samedi", sub: "Voir planning ci-contre" },
-                  { icon: <Phone size={18} />, label: "+33 (0)6 12 34 56 78", sub: "Disponible du lundi au vendredi" },
-                  { icon: <Mail size={18} />, label: "contact@aikido-jeunes.fr", sub: "Réponse sous 48h" },
+                  { icon: <Phone size={18} />, label: "+687 xx xx xx", sub: "Disponible pour toute question" },
+                  { icon: <Mail size={18} />, label: "wagokan.aikido@gmail.com", sub: "Réponse rapide" },
                 ].map((info) => (
                   <div key={info.label} className="flex items-start gap-3">
                     <span style={{ color: red, marginTop: 2, flexShrink: 0 }}>{info.icon}</span>
@@ -427,16 +427,16 @@ export default function App() {
               <span style={{ color: red }}>offerte et sans engagement</span>
             </h2>
             <p style={{ ...body, color: "var(--muted-foreground)", lineHeight: 1.8, fontSize: "0.95rem" }}>
-              Venez découvrir l'aïkido avec votre enfant lors d'une séance d'essai gratuite. Aucun équipement requis, juste une tenue de sport confortable.
+              Venez découvrir l'aïkido avec votre enfant lors d'une séance d'essai gratuite. Aucun équipement requis, juste une tenue de sport confortable. Cliquez sur le bouton ci-contre pour nous envoyer votre demande.
             </p>
             <div className="mt-8 p-5 rounded-lg" style={{ background: "rgba(0,159,218,0.1)", border: "1px solid rgba(0,159,218,0.25)" }}>
-              <div style={{ ...heading, color: red, fontSize: "1rem", marginBottom: 4 }}>Tarifs 2024–2025</div>
+              <div style={{ ...heading, color: red, fontSize: "1rem", marginBottom: 4 }}>Tarifs 2026–2027</div>
               <div style={{ ...body, color: "var(--foreground)", fontSize: "0.9rem", lineHeight: 1.8 }}>
-                Enfants (6–10 ans) : <strong>280 € / an</strong>
+                Enfants/Ado (6–15 ans) : <strong>30 000 FCFP / an</strong>
                 <br />
-                Ados (11–17 ans) : <strong>310 € / an</strong>
+                A partir de 16 ans : <strong>35 000 FCFP / an</strong>
                 <br />
-                <span style={{ color: "var(--muted-foreground)", fontSize: "0.82rem" }}>Licence FFAAA incluse · Paiement en 3× sans frais</span>
+                <span style={{ color: "var(--muted-foreground)", fontSize: "0.82rem" }}>Licence FFAB incluse · Paiement en 3× sans frais</span>
               </div>
             </div>
           </div>
@@ -474,26 +474,14 @@ export default function App() {
                 />
               </div>
             ))}
-            <button
-              type="submit"
-              style={{
-                ...body,
-                background: red,
-                color: "#fff",
-                fontWeight: 700,
-                padding: "0.85rem",
-                borderRadius: "var(--radius)",
-                border: "none",
-                cursor: "pointer",
-                fontSize: "0.95rem",
-                letterSpacing: "0.03em",
-                transition: "opacity 0.2s",
-              }}
-              onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.85")}
-              onMouseLeave={(e) => (e.currentTarget.style.opacity = "1")}
+            {/* BOUTON DE MESSAGERIE LIÉ À VOTRE EMAIL NETTOYÉ */}
+            <a 
+              href="mailto:wagokan.aikido@gmail.com?subject=Demande de cours d'essai - Wagokan Aïkido NC"
+              className="w-full block text-center bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-4 rounded-lg transition duration-200"
+              style={{ ...body, textDecoration: "none" }}
             >
               Envoyer ma demande
-            </button>
+            </a>
           </form>
         </div>
       </section>
@@ -502,13 +490,10 @@ export default function App() {
       <footer style={{ background: "#050810", borderTop: "1px solid var(--border)" }}>
         <div className="max-w-6xl mx-auto px-6 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-full flex items-center justify-center" style={{ background: red }}>
-              <span style={{ fontFamily: "Oswald, sans-serif", color: "#fff", fontWeight: 700, fontSize: "0.85rem" }}>合</span>
-            </div>
-            <span style={{ ...heading, color: "var(--foreground)", fontSize: "0.95rem" }}>AÏKIDO JEUNES</span>
+            <span style={{ ...heading, color: "var(--foreground)", fontSize: "0.95rem" }}>WAGOKAN AÏKIDO NC</span>
           </div>
           <p style={{ ...body, color: "var(--muted-foreground)", fontSize: "0.82rem", textAlign: "center" }}>
-            © 2026 Club Aïkido Jeunes · Affilié à la FFAB · Tous droits réservés
+            © 2026 Wagokan Aïkido NC · Affilié à la FFAB · Tous droits réservés
           </p>
           <div className="flex gap-6">
             {["Mentions légales", "Politique de confidentialité"].map((l) => (

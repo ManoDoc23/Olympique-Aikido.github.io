@@ -27,7 +27,7 @@ export function Navbar() {
           
           {/* Le texte à côté */}
           <span style={{ fontFamily: "Oswald, sans-serif", color: "var(--foreground)", fontWeight: 600, letterSpacing: "0.04em", fontSize: "1.1rem" }}>
-            WAGOKAN AÏKIDO NC
+            OLYMPIQUE de NOUMEA 
           </span>
         </a>
 
