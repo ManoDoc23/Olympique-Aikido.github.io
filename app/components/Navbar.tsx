@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-const logoClub = "/LogoImg.jpg";
+// @ts-ignore
+import logoClub from "./../../LogoImg.jpg";
 export function Navbar() {
   const [open, setOpen] = useState(false);
   const links = [
