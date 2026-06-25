@@ -184,7 +184,7 @@ export default function App() {
           </div>
           <div className="relative">
             <img
-              src={practiceImg}
+              src={LogoImg}
               alt="Pratique de l'aïkido en kimono blanc"
               className="w-full rounded-lg object-cover"
               style={{ height: 420, background: "var(--muted)" }}
