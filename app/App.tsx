@@ -439,9 +439,9 @@ export default function App() {
               <div style={{ ...body, color: "var(--foreground)", fontSize: "0.9rem", lineHeight: 1.8 }}>
                 Enfants/Ado (6–15 ans) : <strong>30 000 FCFP / an soit 2 500 frs/mois</strong>
                 <br />
-                A partir de 16 ans : <strong>35 000 FCFP / an soit 2900 frs/mois</strong>
+                A partir de 16 ans : <strong>35 000 FCFP / an soit 2 900 frs/mois</strong>
                 <br />
-                <span style={{ color: "var(--muted-foreground)", fontSize: "0.82rem" }}>Licence FFAB incluse · Paiement en 3× sans frais</span>
+                <span style={{ color: "var(--muted-foreground)", fontSize: "0.82rem" }}>Licence FFAB incluse · Possibilité de paiement en 3× sans frais</span>
               </div>
             </div>
           </div>
