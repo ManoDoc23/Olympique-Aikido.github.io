@@ -13,7 +13,7 @@ import dojoImg from "./../dojoImg.jpg";
 // @ts-ignore
 import groupImg from "./../groupImg.jpg";
 // @ts-ignore
-import AdultesImg from "./../AdultesImg.jpg";
+import adultesImg from "./../adultesImg.jpg";
 
 
 const heading: React.CSSProperties = {
@@ -231,7 +231,7 @@ export default function App() {
               Des programmes adaptés à chaque âge
             </h2>
           </div>
-          <div className="grid md:grid-cols-2 gap-10">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
             {[
               {
                 img: kidsImg,
@@ -248,7 +248,7 @@ export default function App() {
                 points: ["Techniques avancées", "Passage de grades", "Gestion du stress", "Leadership"],
               },
                {
-                img: AdultesImg,
+                img: 
                 age: "A partir de 15 ans et adultes",
                 title: "Aïkido adultes & Aïkitaïso",
                 desc: "Un programme adapté aux adultes, axé sur le développement personnel, la préparation corporelle douce et la maîtrise des techniques. Idéal pour ceux qui souhaitent approfondir leur pratique et progresser dans leur pratique.",
