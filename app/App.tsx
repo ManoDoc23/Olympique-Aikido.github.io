@@ -15,7 +15,6 @@ import groupImg from "./../groupImg.jpg";
 // @ts-ignore
 import adultesImg from "./../adultesImg.jpg";
 
-
 const heading: React.CSSProperties = {
   fontFamily: "Oswald, sans-serif",
   fontWeight: 700,
@@ -247,14 +246,13 @@ export default function App() {
                 desc: "Un programme plus technique qui approfondit les katas, le travail avec partenaire et prépare aux passages de grades. Idéal pour les ados qui souhaitent progresser sérieusement.",
                 points: ["Techniques avancées", "Passage de grades", "Gestion du stress", "Leadership"],
               },
-               {
-                img: 
+              {
+                img: adultesImg,
                 age: "A partir de 15 ans et adultes",
                 title: "Aïkido adultes & Aïkitaïso",
                 desc: "Un programme adapté aux adultes, axé sur le développement personnel, la préparation corporelle douce et la maîtrise des techniques. Idéal pour ceux qui souhaitent approfondir leur pratique et progresser dans leur pratique.",
                 points: ["Techniques avancées", "Pratique en duo", "Gestion du stress", "Renforcement et souplesse"],
               },
-
             ].map((p) => (
               <div
                 key={p.title}
