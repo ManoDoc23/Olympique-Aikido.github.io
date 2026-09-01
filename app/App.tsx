@@ -47,15 +47,15 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 
 const scheduleData = [
   { day: "Lundi (à venir)", time: "18h – 19h30", group: "Aïkitaïso", sensei: "Sergio" },
-  { day: "Mercredi (à venir)", time: "16h30 – 17h30", group: "Enfants (6–10 ans)", sensei: "Mano" },
-  { day: "Mercredi (à venir)", time: "17h45 – 19h", group: "Ados (11–17 ans)", sensei: "Sergio" },
-  { day: "Samedi", time: "9h15 – 10h15", group: "Enfants (6–10 ans)", sensei: "Mano" },
-  { day: "Samedi", time: "10h30 – 12h", group: "Ados (11–17 ans)", sensei: "Sergio" }
+  { day: "Mercredi (octobre 2026)", time: "16h30 – 17h30", group: "Enfants (5-14 ans)", sensei: "Mano" },
+  { day: "Mercredi (octobre 2026)", time: "17h45 – 19h", group: "Ados & adultes", sensei: "Sergio" },
+  { day: "Samedi", time: "9h – 10h15", group: "Enfants (5–14 ans)", sensei: "Mano" },
+  { day: "Samedi", time: "10h30 – 11h45", group: "Ados & adultes", sensei: "Sergio" }
 ];
 
 const faqs = [
-  { q: "Quel équipement faut-il pour commencer ?", a: "Au départ, une tenue de sport suffit. Après quelques séances, nous vous conseillons l'achat d'un keikogi (kimono d'aïkido). Le club peut vous orienter vers les fournisseurs." },
-  { q: "À partir de quel âge peut-on pratiquer l'aïkido ?", a: "Nous accueillons les enfants dès 6 ans (4 ans sous certaine conditions). L'aïkido étant un art martial non compétitif, il est accessible à tous les profils, même sans expérience sportive préalable." },
+  { q: "Quel équipement faut-il pour commencer ?", a: "Au départ, une tenue de sport suffit. Après quelques séances, nous vous conseillons l'achat d'un keikogi (kimono d'aïkido). Le club peut vous prêter un kimono lors de vos premières séances et peut vous orienter vers les fournisseurs." },
+  { q: "À partir de quel âge peut-on pratiquer l'aïkido ?", a: "Nous accueillons les enfants dès 6 ans (4 ans sous certaine conditions) et les adultes. L'aïkido étant un art martial non compétitif, il est accessible à tous les profils, même sans expérience sportive préalable." },
   { q: "Y a-t-il des compétitions ?", a: "Non. L'aïkido ne participe à aucune compétition. La progression se fait via des examens de passage de grade, dans un esprit de coopération et non de rivalité." },
   { q: "Comment s'inscrire ?", a: "Cliquez sur le bouton de contact ci-dessous pour nous envoyer directement un e-mail ou venez directement au dojo. La première séance d'essai est offerte et sans engagement." },
 ];
@@ -144,7 +144,7 @@ export default function App() {
               onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(255,255,255,0.14)")}
               onMouseLeave={(e) => (e.currentTarget.style.background = "rgba(255,255,255,0.08)")}
             >
-              Découvrir le club
+              Découvrir la section Arts Martiaux_Aïkido WAGOKAN NC
             </a>
           </div>
         </div>
@@ -167,7 +167,7 @@ export default function App() {
         </div>
       </div>
 
-      {/* LE CLUB */}
+      {/* LE CLUB dans la section Arts Martiaux */}
       <section id="club" className="max-w-6xl mx-auto px-6 py-24">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div>
@@ -176,8 +176,8 @@ export default function App() {
               Un dojo ouvert à toutes les familles depuis 2017
             </h2>
             <p style={{ ...body, color: "var(--muted-foreground)", lineHeight: 1.8, marginBottom: "1rem" }}>
-              Le club de l'<strong>Olympique Aïkido NC (Wagokan)</strong> accueille les enfants à partir de 6 ans dans un espace sécurisé et chaleureux. Notre priorité : que chaque enfant progresse à son rythme, dans le respect et la joie du mouvement.
-            </p>
+              La section arts martiaux de<strong>Olympique Aïkido (Wagokan)</strong> accueille les enfants à partir de 6 ans dans un espace sécurisé et chaleureux. Notre priorité : que chaque enfant progresse à son rythme, dans le respect et la joie du mouvement.
+              A la rentrée de Septembre 2026, la section accueillera également des adultes.</p>
             <p style={{ ...body, color: "var(--muted-foreground)", lineHeight: 1.8 }}>
               L'aïkido n'est pas un sport de combat mais un art martial fondé sur la redirection de l'énergie adverse. Il développe la coordination, la confiance en soi, la gestion des émotions — des qualités précieuses bien au-delà du tatami.
             </p>
@@ -232,18 +232,26 @@ export default function App() {
             {[
               {
                 img: practiceImg,
-                age: "6 – 10 ans",
+                age: "5 – 10 ans",
                 title: "Éveil aïkido",
                 desc: "Une approche ludique et progressive. Les enfants apprennent les chutes (ukemi), les déplacements et les premières techniques de base à travers des jeux et exercices adaptés.",
                 points: ["Coordination et équilibre", "Confiance en soi", "Écoute et concentration", "Respect des règles"],
               },
               {
                 img: dojoImg,
-                age: "11 – 17 ans",
+                age: "11 – 14 ans",
                 title: "Aïkido jeunes",
                 desc: "Un programme plus technique qui approfondit les katas, le travail avec partenaire et prépare aux passages de grades. Idéal pour les ados qui souhaitent progresser sérieusement.",
                 points: ["Techniques avancées", "Passage de grades", "Gestion du stress", "Leadership"],
               },
+               {
+                img @,
+                age: "A partir de 15 ans et adultes",
+                title: "Aïkido adultes", "Aïkitaïso"
+                desc: "Un programme adapté aux adultes, axé sur le développement personnel, la préparation corporelle douce et la maîtrise des techniques. Idéal pour ceux qui souhaitent approfondir leur pratique et progresser dans leur pratique.",
+                points: ["Techniques avancées", "Pratique en duo", "Gestion du stress", "Renformcement et souplesse"],
+              },
+
             ].map((p) => (
               <div
                 key={p.title}
