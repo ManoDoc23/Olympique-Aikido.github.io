@@ -12,8 +12,7 @@ import kidsImg from "./../enfants.jpg";
 import dojoImg from "./../dojoImg.jpg";
 // @ts-ignore
 import groupImg from "./../groupImg.jpg";
-// @ts-ignore
-import AdultesImg from "./../adultes.jpg";
+
 
 const heading: React.CSSProperties = {
   fontFamily: "Oswald, sans-serif",
