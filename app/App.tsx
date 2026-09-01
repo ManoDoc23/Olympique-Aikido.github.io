@@ -333,7 +333,7 @@ export default function App() {
               />
               <div className="p-6 flex flex-col gap-4">
                 {[
-                  { icon: <MapPin size={18} />, label: "13 rue Jules Ferry (imm. Cheval)", sub: "Nouméa, Nouvelle-Calédonie" },
+                  { icon: <MapPin size={18} />, label: "au 4ème étage au 13 rue Jules Ferry (imm. Cheval, entrée face au quai ferry)", sub: "Nouméa, Nouvelle-Calédonie" },
                   { icon: <Clock size={18} />, label: "Lundi, Mercredi et Samedi", sub: "Voir planning ci-contre" },
                   { icon: <Phone size={18} />, label: "+687 99 20 98", sub: "Disponible pour toute question" },
                   { icon: <Mail size={18} />, label: "wagokan.aikido@gmail.com", sub: "Réponse rapide" },
