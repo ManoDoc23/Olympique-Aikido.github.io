@@ -12,6 +12,8 @@ import kidsImg from "./../enfants.jpg";
 import dojoImg from "./../dojoImg.jpg";
 // @ts-ignore
 import groupImg from "./../groupImg.jpg";
+// @ts-ignore
+import AdultesImg from "./../adultes.jpg";
 
 const heading: React.CSSProperties = {
   fontFamily: "Oswald, sans-serif",
@@ -245,11 +247,11 @@ export default function App() {
                 points: ["Techniques avancées", "Passage de grades", "Gestion du stress", "Leadership"],
               },
                {
-                imgAdultesImg,
+                img: AdultesImg,
                 age: "A partir de 15 ans et adultes",
-                title: "Aïkido adultes", "Aïkitaïso"
+                title: "Aïkido adultes & Aïkitaïso",
                 desc: "Un programme adapté aux adultes, axé sur le développement personnel, la préparation corporelle douce et la maîtrise des techniques. Idéal pour ceux qui souhaitent approfondir leur pratique et progresser dans leur pratique.",
-                points: ["Techniques avancées", "Pratique en duo", "Gestion du stress", "Renformcement et souplesse"],
+                points: ["Techniques avancées", "Pratique en duo", "Gestion du stress", "Renforcement et souplesse"],
               },
 
             ].map((p) => (
