@@ -12,6 +12,8 @@ import kidsImg from "./../enfants.jpg";
 import dojoImg from "./../dojoImg.jpg";
 // @ts-ignore
 import groupImg from "./../groupImg.jpg";
+// @ts-ignore
+import AdultesImg from "./../adultesImg.jpg";
 
 
 const heading: React.CSSProperties = {
