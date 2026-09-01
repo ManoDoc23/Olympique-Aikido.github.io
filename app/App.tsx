@@ -13,7 +13,7 @@ import dojoImg from "./../dojoImg.jpg";
 // @ts-ignore
 import groupImg from "./../groupImg.jpg";
 // @ts-ignore
-import AdultesImg from "./../adultesImg.jpg";
+import AdultesImg from "./../AdultesImg.jpg";
 
 
 const heading: React.CSSProperties = {
@@ -179,7 +179,7 @@ export default function App() {
               Un dojo ouvert à toutes les familles depuis 2017
             </h2>
             <p style={{ ...body, color: "var(--muted-foreground)", lineHeight: 1.8, marginBottom: "1rem" }}>
-              La section arts martiaux de<strong>Olympique Aïkido (Wagokan)</strong> accueille les enfants à partir de 6 ans dans un espace sécurisé et chaleureux. Notre priorité : que chaque enfant progresse à son rythme, dans le respect et la joie du mouvement.
+              La section arts martiaux de<strong>Olympique Aïkido (Wagokan)</strong> accueille les enfants à partir de 5 ans dans un espace sécurisé et chaleureux. Notre priorité : que chaque enfant progresse à son rythme, dans le respect et la joie du mouvement.
               A la rentrée de Septembre 2026, la section accueillera également des adultes.</p>
             <p style={{ ...body, color: "var(--muted-foreground)", lineHeight: 1.8 }}>
               L'aïkido n'est pas un sport de combat mais un art martial fondé sur la redirection de l'énergie adverse. Il développe la coordination, la confiance en soi, la gestion des émotions — des qualités précieuses bien au-delà du tatami.
