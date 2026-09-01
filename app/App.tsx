@@ -184,7 +184,7 @@ export default function App() {
           </div>
           <div className="relative">
             <img
-              src={practiceImg}
+              src={groupImg}
               alt="Pratique de l'aïkido en kimono blanc"
               className="w-full rounded-lg object-cover"
               style={{ height: 420, background: "var(--muted)" }}
@@ -231,7 +231,7 @@ export default function App() {
           <div className="grid md:grid-cols-2 gap-10">
             {[
               {
-                img: practiceImg,
+                img: kidsImg,
                 age: "5 – 10 ans",
                 title: "Éveil aïkido",
                 desc: "Une approche ludique et progressive. Les enfants apprennent les chutes (ukemi), les déplacements et les premières techniques de base à travers des jeux et exercices adaptés.",
@@ -245,7 +245,7 @@ export default function App() {
                 points: ["Techniques avancées", "Passage de grades", "Gestion du stress", "Leadership"],
               },
                {
-                img @,
+                imgAdultesImg,
                 age: "A partir de 15 ans et adultes",
                 title: "Aïkido adultes", "Aïkitaïso"
                 desc: "Un programme adapté aux adultes, axé sur le développement personnel, la préparation corporelle douce et la maîtrise des techniques. Idéal pour ceux qui souhaitent approfondir leur pratique et progresser dans leur pratique.",
