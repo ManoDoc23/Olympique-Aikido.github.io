@@ -49,9 +49,9 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 
 const scheduleData = [
   { day: "Lundi (à venir)", time: "18h – 19h30", group: "Aïkitaïso", sensei: "Sergio" },
-  { day: "Mercredi (octobre 2026)", time: "16h30 – 17h30", group: "Enfants (5-14 ans)", sensei: "Mano" },
-  { day: "Mercredi (octobre 2026)", time: "17h45 – 19h", group: "Ados & adultes", sensei: "Sergio" },
-  { day: "Samedi", time: "9h – 10h15", group: "Enfants (5–14 ans)", sensei: "Mano" },
+  { day: "Mercredi", time: "17h15 – 18h15", group: "Enfants (6-11 ans)", sensei: "Mano" },
+  { day: "Mercredi", time: "18h30 – 19h30", group: "Ados & adultes", sensei: "Sergio" },
+  { day: "Samedi", time: "9h – 10h15", group: "Enfants (6-11 ans)", sensei: "Mano" },
   { day: "Samedi", time: "10h30 – 11h45", group: "Ados & adultes", sensei: "Sergio" }
 ];
 
