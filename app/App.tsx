@@ -13,7 +13,7 @@ import dojoImg from "./../dojoImg.jpg";
 // @ts-ignore
 import groupImg from "./../groupImg.jpg";
 // @ts-ignore
-import adultesImg from "./../adultesImg.jpg";
+import adultesImg from '../AdultesImg.jpg';
 
 const heading: React.CSSProperties = {
   fontFamily: "Oswald, sans-serif",
