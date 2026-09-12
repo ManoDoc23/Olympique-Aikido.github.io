@@ -1,7 +1,16 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/Olympique-Aikido.github.io/', // <-- Ajoutez cette ligne avec le nom exact de votre dépôt
-})
+  base: '/Olympique-Aikido.github.io/',
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'lucide-vendor': ['lucide-react'], // Spare les icônes dans un fichier dédié
+        },
+      },
+    },
+  },
+});
